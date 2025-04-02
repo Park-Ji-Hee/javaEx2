@@ -40,7 +40,7 @@ public class Ex05 {
 		s2 = s1.replace("대한", "大韓");	// 정규식 사용불가
 		System.out.println(s2);
 		
-		s2 = s1.replaceAll("대한", "大韓");// 정규식 사용불가
+		s2 = s1.replaceAll("대한", "大韓");// 정규식 사용가능
 		System.out.println(s2);
 		
 		
