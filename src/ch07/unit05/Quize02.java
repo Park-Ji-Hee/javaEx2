@@ -25,7 +25,7 @@ public class Quize02 {
 		System.out.println("나이는 " + a + " 입니다.");
 		
 		int a2 = toAge2(birth);
-		System.out.println("나이는 " + a + " 입니다.");
+		System.out.println("나이는 " + a2 + " 입니다.");
 		
 		sc.close();
 	}
@@ -49,24 +49,6 @@ public class Quize02 {
 		}
 		
 		
-//		birth = birth.replaceAll("(\\-|]].|\\/)", "");
-//		Calendar cal = Calendar.getInstance();
-//		
-//		int y = Integer.parseInt(birth.substring(0,4));
-//		age = cal.get(Calendar.YEAR) - y;
-//		
-//		// 생일이 현재와 같은 달이거나 더 늦은 달일 때
-//		
-//		int m1 = Integer.parseInt(birth.substring(5,6));
-//		int m2 = cal.get(Calendar.MONTH);
-//		
-//		int d1 = Integer.parseInt(birth.substring(7,8));
-//		int d2 = cal.get(Calendar.DATE);
-//		
-//		if(d1 > d2 || m1 > m2) {
-//			age--;
-//		}
-//		
 		return age;
 	}
 	

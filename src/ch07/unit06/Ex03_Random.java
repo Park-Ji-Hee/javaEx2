@@ -1,0 +1,41 @@
+package ch07.unit06;
+
+import java.util.Random;
+
+public class Ex03_Random {
+
+	public static void main(String[] args) {
+		String s;
+		
+		s = toNumber5();
+		System.out.println("5자리 난수 : " +s);
+		
+		s = toNumber3();
+		System.out.println("서로 다른 세자리 정수 : " + s);
+
+	}
+	
+	public static String toNumber5() { // static 이면 main에서 바로 볼 수 있음
+		// 5자리 난수
+		Random rnd = new Random();
+		
+		return String.format("%05d", rnd.nextInt(100000));
+	}
+	
+	public static String toNumber3() {
+		// 서로다른 3자리 난수(123-987)
+		StringBuilder sb = new StringBuilder();
+		
+		Random rnd = new Random();
+		String n;
+		
+		while(sb.length() < 3) {
+			n = Integer.toString(rnd.nextInt(9) + 1);
+			if(sb.indexOf(n) >= 0) {
+				continue;
+			}
+			sb.append(n);
+		}
+		return sb.toString();
+	}
+}
