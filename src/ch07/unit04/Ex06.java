@@ -34,7 +34,8 @@ public class Ex06 {
 		// [^] : 반대
 		s = "우리 12 abc 67 & 79";
 		s = s.replaceAll("[^0-9]", "*");
-		System.out.println(s);
+		System.out.println(s);			// ***12*****67***79
+
 		
 	}
 
